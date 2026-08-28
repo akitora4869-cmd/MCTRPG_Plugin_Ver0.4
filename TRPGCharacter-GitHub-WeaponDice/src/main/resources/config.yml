@@ -1,0 +1,54 @@
+# TRPGCharacter 設定
+
+book:
+  title: "探索者シート"
+  author: "TRPG System"
+
+# 能力値がまだ設定されていないプレイヤーの初期値
+default-stat-value: 0
+
+# /roll と本からの判定結果を全体チャットに表示するか
+broadcast-rolls: true
+
+# 入力できる能力値・技能値の範囲
+input:
+  min: 0
+  max: 999
+
+messages:
+  prefix: "&6[TRPG]&r "
+
+
+# 画面右側の個別ステータス表示
+sidebar:
+  enabled: true
+  server-name: "TRPG Server"
+  # 20tick = 1秒
+  update-interval: 20
+
+
+# Minecraft本体の体力・満腹度との同期
+health-sync:
+  # 能力値未設定時の即死防止用
+  safe-hp: 4
+  # trueで満腹度を常に最大固定
+  disable-hunger: true
+
+
+# HP/SAN低下時の危険演出
+danger-effects:
+  enabled: true
+
+  # 20tick = 1秒
+  # 40tickなら約2秒ごとに状態を確認
+  check-interval: 40
+
+  # 固定の3段階
+  # 50%以下: 軽度
+  # 25%以下: 中度
+  # 10%以下: 重度
+
+
+# 入室時の本人向け案内
+join-guide:
+  enabled: true
